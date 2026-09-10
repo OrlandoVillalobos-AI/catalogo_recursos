@@ -289,10 +289,13 @@ aparece y `git status` para verificar que el árbol está limpio.
 La práctica indica trabajar en parejas con intercambio de roles. El flujo se ejecutó con **dos cuentas
 de GitHub reales y distintas**:
 
-| Rol | Cuenta | Repositorio de trabajo |
-|---|---|---|
-| Persona A (propietaria) | `OrlandoVillalobos-AI` | `OrlandoVillalobos-AI/catalogo_recursos` |
-| Persona B (colaboradora) | `pelopapuoxacaneitor-maker` | Fork: `pelopapuoxacaneitor-maker/catalogo_recursos` |
+| Rol | Persona | Cuenta de GitHub | Repositorio de trabajo |
+|---|---|---|---|
+| Persona A (propietaria) | Orlando Villalobos Gutiérrez | `OrlandoVillalobos-AI` | `OrlandoVillalobos-AI/catalogo_recursos` |
+| Persona B (colaboradora) | Diego Emilio Alferez Vallejo | `pelopapuoxacaneitor-maker` | Fork: `pelopapuoxacaneitor-maker/catalogo_recursos` |
+
+La cuenta `pelopapuoxacaneitor-maker` corresponde a **Diego Emilio Alferez Vallejo**, quien participó
+como persona colaboradora del equipo: es la autora del fork y de los Pull Requests #3 y #4.
 
 Con dos cuentas, el ciclo de colaboración se completó sin simulaciones:
 
@@ -318,3 +321,13 @@ El **reto final** (sección 23) se ejecutó con la persona colaboradora creando 
 `actualiza-readme` desde el fork, agregando la sección *Tipos de recursos* al `README.md` y solicitando
 su integración mediante un nuevo Pull Request. La persona propietaria revisó, aprobó, integró y
 actualizó su repositorio local, completando así el intercambio de responsabilidades del flujo.
+
+## Integrantes del equipo
+
+| Nombre | Rol en la práctica | Cuenta de GitHub |
+|---|---|---|
+| Orlando Villalobos Gutiérrez | Persona A (propietaria del repositorio) | `OrlandoVillalobos-AI` |
+| Diego Emilio Alferez Vallejo | Persona B (colaboradora, autora del fork) | `pelopapuoxacaneitor-maker` |
+
+Práctica elaborada en equipo para la asignatura **Desarrollo de Aplicaciones y Servicios Virtuales**,
+Universidad Iberoamericana León.

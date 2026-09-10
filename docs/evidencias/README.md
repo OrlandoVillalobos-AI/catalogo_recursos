@@ -3,6 +3,17 @@
 Esta carpeta reúne las evidencias del flujo completo de Git y GitHub seguido en la práctica
 **Git y GitHub – Aplicación autónoma del flujo de trabajo**.
 
+## Integrantes del equipo
+
+| Nombre | Rol en la práctica | Cuenta de GitHub |
+|---|---|---|
+| Orlando Villalobos Gutiérrez | Persona A (propietaria del repositorio) | `OrlandoVillalobos-AI` |
+| Diego Emilio Alferez Vallejo | Persona B (colaboradora, autora del fork) | `pelopapuoxacaneitor-maker` |
+
+Las evidencias que corresponden al trabajo de la persona colaboradora (06, 08, 09 y 10) provienen del
+fork https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos, por lo que muestran la cuenta y
+la autoría de **Diego Emilio Alferez Vallejo**.
+
 ## Formato de las evidencias
 
 Las capturas de pantalla solicitadas por la práctica se sustituyen por **transcripciones de

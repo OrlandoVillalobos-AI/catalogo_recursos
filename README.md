@@ -3,6 +3,17 @@
 Proyecto de la práctica **Git y GitHub – Aplicación autónoma del flujo de trabajo**
 (Desarrollo de Aplicaciones y Servicios Virtuales, Universidad Iberoamericana León).
 
+**Integrantes del equipo:**
+
+| Nombre | Rol en la práctica | Cuenta de GitHub |
+|---|---|---|
+| Orlando Villalobos Gutiérrez | Persona A (propietaria del repositorio) | `OrlandoVillalobos-AI` |
+| Diego Emilio Alferez Vallejo | Persona B (colaboradora, autora del fork) | `pelopapuoxacaneitor-maker` |
+
+El fork de la persona colaboradora está en
+https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos y de ahí provienen los Pull Requests
+#3 y #4 integrados en `main`.
+
 ## Descripción
 
 Aplicación que representa la estructura inicial de un sistema para **registrar y consultar
