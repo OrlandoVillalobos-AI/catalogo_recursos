@@ -41,3 +41,18 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Carpeta `docs/evidencias/` con los diez archivos de evidencia del flujo de trabajo y su índice
   en `docs/evidencias/README.md`.
 - Referencia al índice de evidencias en `docs/respuestas.md`.
+
+## [0.2.0] - 2026-09-10
+
+### Añadido
+
+- Nuevo archivo `docs/fuentes_recomendadas.md` con ocho plataformas de recursos académicos, cada una
+  con su URL, qué aporta y para qué sirve.
+- Criterios 9 (costo de acceso) y 10 (subtítulos o traducción) en `docs/criterios.md`.
+
+### Cambiado
+
+- Se amplía la documentación del proyecto. No se modifica el código de la aplicación.
+- **Atendida la observación de la revisión:** el valor `institucional` del criterio 9 se renombra a
+  `cubierto_por_institucion` para no confundirse con el valor `institucional` del criterio 6
+  (licencia de uso), que tiene un significado distinto.
