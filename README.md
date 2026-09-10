@@ -101,21 +101,6 @@ rich==14.2.0
 
 ## Tipos de recursos
 
-El catálogo contempla cinco tipos de recurso académico, definidos en `docs/criterios.md`:
-
-| Tipo | Qué es | Ejemplo en `data/recursos.json` |
-|---|---|---|
-| `libro` | Obra monográfica, impresa o digital. | *Automate the Boring Stuff with Python* |
-| `sitio_web` | Portal, blog o documentación en línea. | Documentación oficial de Python |
-| `video` | Clase, conferencia o tutorial audiovisual. | Curso de bases de datos relacionales |
-| `articulo` | Artículo académico, de divulgación o técnico. | (pendiente de registrar) |
-| `software` | Herramienta, biblioteca o plataforma. | (pendiente de registrar) |
-
-Cada recurso se clasifica además por tema, nivel académico, autor o fuente, idioma, licencia de uso,
-formato del archivo y vigencia.
-
-## Tipos de recursos
-
 El catálogo contempla cinco tipos de recurso académico. Esta sección describe qué se registra en cada
 uno, para qué sirve y de qué fuente suele provenir:
 
@@ -153,6 +138,9 @@ registra la versión y la licencia para saber si puede usarse libremente.
 | `video` | Clase o tutorial | introductorio | plataformas de cursos |
 | `articulo` | Texto académico | avanzado | arXiv, Google Scholar |
 | `software` | Código o herramienta | introductorio a avanzado | GitHub |
+
+Cada recurso se clasifica además por tema, nivel académico, autor o fuente, idioma, licencia de uso,
+formato del archivo, vigencia, costo de acceso y disponibilidad de subtítulos.
 
 ## Próximas mejoras
 
