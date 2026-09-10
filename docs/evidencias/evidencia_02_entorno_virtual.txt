@@ -1,0 +1,17 @@
+=== EVIDENCIA 02: Entorno virtual activo ===
+
+--- 1) Comando: source .venv/bin/activate ---
+Ruta del Python en uso:
+/home/orlax1s/Documents/catalogo_recursos/.venv/bin/python
+Python 3.13.12
+
+--- 2) Intérprete configurado (ruta absoluta dentro de .venv) ---
+VIRTUAL_ENV=/home/orlax1s/Documents/catalogo_recursos/.venv
+
+--- 3) Administrador de paquetes del entorno virtual ---
+/home/orlax1s/Documents/catalogo_recursos/.venv/bin/pip
+pip 26.2.1 from /home/orlax1s/Documents/catalogo_recursos/.venv/lib/python3.13/site-packages/pip (python 3.13)
+
+--- 4) La carpeta .venv NO se versiona ---
+.gitignore:2:.venv/	.venv/
+(salida: .gitignore:2:.venv/  .venv/  -> ignorada, no aparece en GitHub)

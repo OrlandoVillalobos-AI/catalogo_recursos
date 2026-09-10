@@ -3,7 +3,9 @@
 Práctica: **Git y GitHub – Aplicación autónoma del flujo de trabajo**
 Desarrollo de Aplicaciones y Servicios Virtuales — Universidad Iberoamericana León.
 
-Las capturas que evidencian cada paso se encuentran en `docs/evidencias/`.
+Las capturas que evidencian cada paso se encuentran en `docs/evidencias/`. El índice completo con la
+correspondencia entre cada archivo de evidencia y los pasos de la práctica está en
+`docs/evidencias/README.md`.
 
 ---
 

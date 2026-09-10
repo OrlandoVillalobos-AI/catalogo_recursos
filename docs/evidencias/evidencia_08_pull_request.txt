@@ -1,0 +1,54 @@
+=== EVIDENCIA 08: Pull Request ===
+
+--- PR #1: aportacion de la rama de colaboracion ---
+  Numero      : #1
+  Titulo      : Incorporar documentación de fuentes recomendadas y nuevos criterios de clasificación
+  URL         : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/1
+  Origen      : mejora-catalogo
+  Destino     : main
+  Estado      : closed
+  Fusionado   : True
+  Creado      : 2026-09-10T17:28:13Z
+  Fusionado el: 2026-09-10T17:29:03Z
+
+  Descripcion enviada con la solicitud:
+    ## Aportación
+    
+    Se incorpora documentación adicional al catálogo de recursos académicos.
+    
+    ### Archivo creado
+    
+    - `docs/fuentes_recomendadas.md` — incluye **ocho fuentes o plataformas** que pueden proporcionar recursos académicos (Google Scholar, arXiv, MIT OpenCourseWare, Coursera, documentación oficial de Python, repositorio institucional de la Ibero León, Khan Academy y GitHub), con su URL y el criterio de uso de cada una.
+    
+    ### Archivos modificados
+    
+    - `docs/criterios.md` — se agregan **dos criterios nuevos** de clasificación:
+      - Criterio 7: *Formato del archivo* (`texto`, `multimedia`, `interactivo`, `codigo`).
+      - Criterio 8: *Vigencia del recurso* (`vigente`, `clasico`, `obsoleto`).
+    - `CHANGELOG.md` — se registra la entrada `0.1.1` con la documentación incorporada.
+    
+    ### Qué aporta el cambio
+    
+    Amplía la base documental del proyecto sin tocar el código de la aplicación: define de dónde se
+    obtendrán los recursos y con qué criterios adicionales se clasificarán, lo que prepara el terreno
+    para las funcionalidades de importación y clasificación descritas en `docs/alcance.md`.
+    
+    ### Qué debe revisar la persona propietaria
+    
+    1. Que `docs/fuentes_recomendadas.md` contenga las cinco fuentes mínimas solicitadas y que sus URLs
+       sean correctas.
+    2. Que los criterios 7 y 8 sean coherentes con los cuatro criterios ya existentes.
+    3. Que la entrada del CHANGELOG corresponda a los archivos realmente modificados.
+    4. Que ningún archivo ajeno a esta aportación se haya incluido en el commit.
+
+--- Archivos incluidos en el PR #1 (pestana Files changed) ---
+  modified  CHANGELOG.md                     +13 -0
+  modified  docs/criterios.md                +25 -0
+  added     docs/fuentes_recomendadas.md     +74 -0
+
+--- Commits contenidos en el PR #1 ---
+  f7a95d3  Incorporar documentación de fuentes recomendadas y nuevos criterios
+  93b291a  Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+
+Nota: el PR #1 fue creado desde la rama mejora-catalogo como origen y main como destino,
+que es el mismo flujo que se seguiria desde un fork: rama del colaborador -> main del original.

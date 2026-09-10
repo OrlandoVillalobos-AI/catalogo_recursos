@@ -1,0 +1,64 @@
+=== EVIDENCIA 09: Solicitud de cambios y su atención ===
+
+--- 1) Revision del PR #1 solicitando un cambio (paso 19) ---
+  Fecha    : 2026-09-10T17:28:30Z
+  Revisor  : OrlandoVillalobos-AI
+  Estado   : COMMENTED
+  Contenido de la revision:
+    Revisión de la aportación (Persona propietaria).
+    
+    **Archivos revisados**
+    - `docs/fuentes_recomendadas.md` (nuevo): contiene ocho fuentes, cumple el mínimo de cinco solicitado. URLs verificadas.
+    - `docs/criterios.md` (modificado): los criterios 7 (formato del archivo) y 8 (vigencia) son coherentes con los cuatro criterios anteriores.
+    - `CHANGELOG.md` (modificado): la entrada 0.1.1 corresponde exactamente a los archivos modificados en este commit.
+    
+    **Observación — se solicita un cambio antes de aprobar**
+    
+    En `docs/fuentes_recomendadas.md` las fuentes aparecen únicamente con su nombre y su URL. Falta una breve descripción de cada una que explique qué tipo de recursos ofrece y para qué nivel académico resulta útil.
+    
+    Acción solicitada: agregar una breve descripción a cada fuente incluida en `docs/fuentes_recomendadas.md`.
+    
+    No se realiza el merge hasta que la observación sea atendida.
+    
+
+--- 2) Comentario con la solicitud de cambios explicita ---
+  Fecha : 2026-09-10T17:28:31Z
+  Autor : OrlandoVillalobos-AI
+  URL   : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/1#issuecomment-5622759636
+  Contenido:
+    **Solicitud de cambios (Request changes)**
+    
+    Se solicita **al menos un cambio antes de aprobar**, conforme al paso 19 de la práctica:
+    
+    > Agregar una breve descripción a cada fuente incluida en `docs/fuentes_recomendadas.md`.
+    
+    El Pull Request permanece abierto sin merge hasta que la observación sea atendida en la misma rama `mejora-catalogo`.
+
+--- 3) Atencion de la solicitud en la MISMA rama, SIN crear otro PR (paso 20) ---
+  Comando ejecutado: git push origin mejora-catalogo
+  Commit que atiende la observacion:
+    93b291a - Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+    Archivos tocados:
+      modified  docs/fuentes_recomendadas.md (+24)
+
+--- 4) Comprobacion: la observacion se atendio en la MISMA solicitud (paso 20) ---
+  Antes de atender la observacion, el PR #1 contenia 1 commit (f7a95d3).
+  Tras el push a la misma rama, el PR #1 contiene 2 commits: f7a95d3 + 93b291a.
+  El PR #1 nunca se cerro ni se volvio a abrir: siguio siendo la misma solicitud (number=1).
+
+  Comprobacion por API: Pull Requests existentes en el repositorio
+   PR #1 | closed | fusionado=True | Incorporar documentacion de fuentes recomendadas y nuevos criterios -> ESTA es la unica solicitud de la colaboracion; el commit de atencion entro en ella.
+   PR #2 | closed | fusionado=True | Agregar seccion Tipos de recursos al README -> corresponde al RETO FINAL (seccion 23), es una aportacion distinta y posterior, no una segunda solicitud del mismo cambio.
+
+  Conclusion: el PR #1 paso de 1 commit (f7a95d3) a 2 commits (f7a95d3 + 93b291a)
+  al actualizar la misma rama remota. NO se creo un Pull Request nuevo: GitHub
+  incorporo automaticamente el commit nuevo a la solicitud existente.
+
+--- 5) Nota tecnica sobre la interfaz de GitHub ---
+  La API de GitHub rechaza las revisiones con veredicto REQUEST_CHANGES o APPROVE
+  cuando el autor del Pull Request es el mismo usuario autenticado (error 422:
+  'Review Can not request changes on your own pull request'). Como en esta ejecucion
+  el propietario y el colaborador son el mismo usuario, la revision con veredicto y el
+  comentario posterior se registran como comentarios de revision (event=COMMENT), que
+  quedan igualmente versionados en el hilo del Pull Request y cumplen la funcion de
+  solicitar el cambio antes de aprobar, tal como exige el paso 19 de la practica.

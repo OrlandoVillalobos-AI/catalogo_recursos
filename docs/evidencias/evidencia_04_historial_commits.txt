@@ -1,0 +1,67 @@
+=== EVIDENCIA 04: Historial de commits ===
+
+--- 1) git log --oneline (historial reducido, pasos 10 y 62) ---
+79a2630 Merge PR #2: sección Tipos de recursos en el README
+1c14f2d Agregar sección Tipos de recursos al README
+0ccb22d Merge PR #1: documentación de fuentes recomendadas y nuevos criterios
+93b291a Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+f7a95d3 Incorporar documentación de fuentes recomendadas y nuevos criterios
+faf20ed Agregar sección Próximas mejoras en el README
+102116f Agregar tercer recurso al catálogo
+bd905a5 Creación inicial del proyecto Catálogo de recursos académicos
+
+--- 2) git log con autor, fecha y rama ---
+79a2630 | 2026-09-10 | Orlando Villalobos Gutiérrez |  (HEAD -> main, origin/main, origin/HEAD)
+     Merge PR #2: sección Tipos de recursos en el README
+1c14f2d | 2026-09-10 | Orlando Villalobos Gutiérrez |  (origin/actualiza-readme, actualiza-readme)
+     Agregar sección Tipos de recursos al README
+0ccb22d | 2026-09-10 | Orlando Villalobos Gutiérrez | 
+     Merge PR #1: documentación de fuentes recomendadas y nuevos criterios
+93b291a | 2026-09-10 | Orlando Villalobos Gutiérrez |  (origin/mejora-catalogo, mejora-catalogo)
+     Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+f7a95d3 | 2026-09-10 | Orlando Villalobos Gutiérrez | 
+     Incorporar documentación de fuentes recomendadas y nuevos criterios
+faf20ed | 2026-09-10 | Orlando Villalobos Gutiérrez | 
+     Agregar sección Próximas mejoras en el README
+102116f | 2026-09-10 | Orlando Villalobos Gutiérrez | 
+     Agregar tercer recurso al catálogo
+bd905a5 | 2026-09-10 | Orlando Villalobos Gutiérrez | 
+     Creación inicial del proyecto Catálogo de recursos académicos
+
+--- 3) Conteo total de commits ---
+Total: 8 commits
+
+--- 4) Historial con estadisticas (git log --stat) ---
+79a2630 Merge PR #2: sección Tipos de recursos en el README
+1c14f2d Agregar sección Tipos de recursos al README
+ CHANGELOG.md |  7 +++++++
+ README.md    | 15 +++++++++++++++
+ 2 files changed, 22 insertions(+)
+0ccb22d Merge PR #1: documentación de fuentes recomendadas y nuevos criterios
+93b291a Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+ docs/fuentes_recomendadas.md | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+f7a95d3 Incorporar documentación de fuentes recomendadas y nuevos criterios
+ CHANGELOG.md                 | 13 ++++++++++++
+ docs/criterios.md            | 25 ++++++++++++++++++++++
+ docs/fuentes_recomendadas.md | 50 ++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 88 insertions(+)
+faf20ed Agregar sección Próximas mejoras en el README
+ README.md | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+102116f Agregar tercer recurso al catálogo
+ data/recursos.json | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+bd905a5 Creación inicial del proyecto Catálogo de recursos académicos
+ .gitignore           |  31 ++++++
+ CHANGELOG.md         |  15 +++
+ README.md            | 100 ++++++++++++++++++
+ app/configuracion.py |  21 ++++
+ app/main.py          |  23 +++++
+ data/recursos.json   |  27 +++++
+ docs/alcance.md      |  49 +++++++++
+ docs/criterios.md    |  60 +++++++++++
+ docs/respuestas.md   | 284 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ requirements.txt     |   9 ++
+ tests/test_basico.py |  63 ++++++++++++
+ 11 files changed, 682 insertions(+)

@@ -33,3 +33,11 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 
 - Sección *Tipos de recursos* en `README.md`, con los cinco tipos de recurso del catálogo y su
   correspondencia con los registros de ejemplo.
+
+## [0.1.3] - 2026-09-10
+
+### Añadido
+
+- Carpeta `docs/evidencias/` con los diez archivos de evidencia del flujo de trabajo y su índice
+  en `docs/evidencias/README.md`.
+- Referencia al índice de evidencias en `docs/respuestas.md`.

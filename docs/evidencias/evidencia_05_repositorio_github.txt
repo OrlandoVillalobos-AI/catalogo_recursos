@@ -1,0 +1,34 @@
+=== EVIDENCIA 05: Repositorio publicado en GitHub ===
+
+Repositorio: https://github.com/OrlandoVillalobos-AI/catalogo_recursos
+Rama principal: main
+
+--- 1) Remotos configurados (paso 22: git remote -v) ---
+origin	https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git (fetch)
+origin	https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git (push)
+
+--- 2) Rama principal y su seguimiento remoto (paso 23) ---
+  actualiza-readme 1c14f2d [origin/actualiza-readme] Agregar sección Tipos de recursos al README
+* main             79a2630 [origin/main] Merge PR #2: sección Tipos de recursos en el README
+  mejora-catalogo  93b291a [origin/mejora-catalogo] Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+
+--- 3) Contenido publicado (verificado por API de GitHub) ---
+app/  data/  docs/  tests/  README.md  requirements.txt  CHANGELOG.md  .gitignore
+
+--- 4) .venv NO aparece en GitHub ---
+Verificacion: git ls-tree -r main --name-only | grep -c '.venv'
+Resultado: 0 coincidencias (debe ser 0)
+
+--- 5) Archivos versionados en main ---
+.gitignore
+CHANGELOG.md
+README.md
+app/configuracion.py
+app/main.py
+data/recursos.json
+docs/alcance.md
+docs/criterios.md
+docs/fuentes_recomendadas.md
+docs/respuestas.md
+requirements.txt
+tests/test_basico.py

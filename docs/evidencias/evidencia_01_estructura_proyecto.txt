@@ -1,0 +1,18 @@
+catalogo_recursos/
+├── app/
+│   ├── configuracion.py
+│   └── main.py
+├── data/
+│   └── recursos.json
+├── docs/
+│   ├── evidencias/
+│   ├── alcance.md
+│   ├── criterios.md
+│   ├── fuentes_recomendadas.md
+│   └── respuestas.md
+├── tests/
+│   └── test_basico.py
+├── .gitignore
+├── CHANGELOG.md
+├── README.md
+└── requirements.txt

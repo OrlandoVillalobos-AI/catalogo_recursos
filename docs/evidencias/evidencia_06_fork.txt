@@ -1,0 +1,61 @@
+=== EVIDENCIA 06: Fork / copia de trabajo de la persona colaboradora ===
+
+Nota de contexto: la practica solicita 2 cuentas (propietario + colaborador con fork).
+En esta ejecucion el colaborador se representa mediante una rama de trabajo sobre el
+mismo repositorio, por lo que NO existe un fork remoto en otra cuenta.
+Lo que SI se evidencia es el ciclo completo de aportacion desde una copia de trabajo
+independiente: rama -> commits -> push -> Pull Request -> revision -> merge.
+
+--- 1) Clonado del repositorio (paso 27: obtener copia de trabajo) ---
+Comando: git clone https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git
+
+--- 2) Comprobacion: .venv NO existe en la copia obtenida (paso 30) ---
+Contenido de la copia clonada:
+.
+..
+app
+CHANGELOG.md
+data
+docs
+.git
+.gitignore
+README.md
+requirements.txt
+tests
+
+Existe .venv? -> NO (correcto: debe reconstruirse)
+
+--- 3) Archivos principales presentes en la copia ---
+  OK  README.md
+  OK  requirements.txt
+  OK  .gitignore
+  OK  CHANGELOG.md
+  OK  app/
+  OK  data/
+  OK  docs/
+  OK  tests/
+
+--- 4) Ramas disponibles (paso 29: verificar repositorios remotos) ---
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/actualiza-readme
+  remotes/origin/main
+  remotes/origin/mejora-catalogo
+
+--- 5) Remoto configurado en la copia ---
+origin	https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git (fetch)
+origin	https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git (push)
+
+--- 6) Contenido completo que recibe la persona colaboradora ---
+.gitignore
+CHANGELOG.md
+README.md
+app/configuracion.py
+app/main.py
+data/recursos.json
+docs/alcance.md
+docs/criterios.md
+docs/fuentes_recomendadas.md
+docs/respuestas.md
+requirements.txt
+tests/test_basico.py

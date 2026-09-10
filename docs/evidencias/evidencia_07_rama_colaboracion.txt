@@ -1,0 +1,52 @@
+=== EVIDENCIA 07: Rama de colaboración ===
+
+--- 1) Creacion de la rama (paso 35) ---
+Comando: git checkout -b mejora-catalogo
+Comprobacion de la rama activa (paso 36):
+  git branch --show-current  ->  mejora-catalogo
+  git branch                 ->  * mejora-catalogo  /  main
+
+--- 2) Verificacion de que NO se trabajo sobre main (pasos 37 y 43) ---
+Commit de la aportacion: f7a95d3
+Ramas que contenian ese commit en el momento del push:
+  git branch --contains f7a95d3   ->   mejora-catalogo   (NO main)
+
+Estado de main antes del merge (faf20ed) — sin la aportacion:
+faf20ed Agregar sección Próximas mejoras en el README
+
+--- 3) Los cambios SI quedaron contenidos en la rama (pasos 44-46) ---
+Contenido de docs/ en la rama remota origin/mejora-catalogo:
+docs/alcance.md
+docs/criterios.md
+docs/fuentes_recomendadas.md
+docs/respuestas.md
+
+Comparacion del arbol de la rama contra el estado base faf20ed (paso 40):
+ CHANGELOG.md                 | 13 ++++++++
+ docs/criterios.md            | 25 +++++++++++++++
+ docs/fuentes_recomendadas.md | 74 ++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 112 insertions(+)
+
+--- 4) Ramas remotas existentes en GitHub (paso 45) ---
+  origin/HEAD -> origin/main
+  origin/actualiza-readme
+  origin/main
+  origin/mejora-catalogo
+
+--- 5) Revision previa de los cambios sin registrarlos (pasos 38-41) ---
+git status --short  ->
+  M  CHANGELOG.md                  (modificado)
+  M  docs/criterios.md             (modificado)
+  ?? docs/fuentes_recomendadas.md  (NUEVO, sin seguimiento)
+
+git diff --stat (solo archivos ya rastreados) ->
+  CHANGELOG.md      | 13 +++++++++++++
+  docs/criterios.md | 25 +++++++++++++++++
+
+Preparacion selectiva unicamente de los archivos de la colaboracion (paso 41):
+  git add docs/fuentes_recomendadas.md docs/criterios.md CHANGELOG.md
+
+--- 6) Verificacion de la rama de colaboracion en la API de GitHub ---
+URL: https://github.com/OrlandoVillalobos-AI/catalogo_recursos/tree/mejora-catalogo
+  Rama: mejora-catalogo
+  Ultimo commit: 93b291a - Atender solicitud de cambios: agregar descripción a cada fuente recomendada
