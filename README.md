@@ -99,6 +99,21 @@ rich==14.2.0
 > La carpeta `.venv/` no se almacena en el repositorio: se reconstruye en cada equipo a partir de
 > `requirements.txt`.
 
+## Tipos de recursos
+
+El catálogo contempla cinco tipos de recurso académico, definidos en `docs/criterios.md`:
+
+| Tipo | Qué es | Ejemplo en `data/recursos.json` |
+|---|---|---|
+| `libro` | Obra monográfica, impresa o digital. | *Automate the Boring Stuff with Python* |
+| `sitio_web` | Portal, blog o documentación en línea. | Documentación oficial de Python |
+| `video` | Clase, conferencia o tutorial audiovisual. | Curso de bases de datos relacionales |
+| `articulo` | Artículo académico, de divulgación o técnico. | (pendiente de registrar) |
+| `software` | Herramienta, biblioteca o plataforma. | (pendiente de registrar) |
+
+Cada recurso se clasifica además por tema, nivel académico, autor o fuente, idioma, licencia de uso,
+formato del archivo y vigencia.
+
 ## Próximas mejoras
 
 Cambios previstos para las siguientes versiones del proyecto:
