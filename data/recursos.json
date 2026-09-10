@@ -22,6 +22,17 @@
       "fuente": "https://docs.python.org/3/",
       "idioma": "en",
       "licencia": "abierta"
+    },
+    {
+      "id": 3,
+      "titulo": "Curso de introducción a las bases de datos relacionales",
+      "tipo": "video",
+      "tema": "bases_de_datos",
+      "nivel": "introductorio",
+      "autor": "Oracle Dev Gym",
+      "fuente": "https://devgym.oracle.com/",
+      "idioma": "es",
+      "licencia": "abierta"
     }
   ]
 }
