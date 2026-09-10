@@ -1,61 +1,37 @@
-=== EVIDENCIA 06: Fork / copia de trabajo de la persona colaboradora ===
+=== EVIDENCIA 06: Fork de la persona colaboradora ===
 
-Nota de contexto: la practica solicita 2 cuentas (propietario + colaborador con fork).
-En esta ejecucion el colaborador se representa mediante una rama de trabajo sobre el
-mismo repositorio, por lo que NO existe un fork remoto en otra cuenta.
-Lo que SI se evidencia es el ciclo completo de aportacion desde una copia de trabajo
-independiente: rama -> commits -> push -> Pull Request -> revision -> merge.
+--- 26. La persona propietaria comparte el repositorio; el colaborador crea un FORK ---
+Repositorio original : OrlandoVillalobos-AI/catalogo_recursos
+Fork creado          : pelopapuoxacaneitor-maker/catalogo_recursos
 
---- 1) Clonado del repositorio (paso 27: obtener copia de trabajo) ---
-Comando: git clone https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git
+  Fork   : pelopapuoxacaneitor-maker/catalogo_recursos
+  Dueño  : pelopapuoxacaneitor-maker
+  Creado : 2026-09-10T17:48:39Z
+  Padre  : n/a
+  URL    : https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos
 
---- 2) Comprobacion: .venv NO existe en la copia obtenida (paso 30) ---
-Contenido de la copia clonada:
-.
-..
-app
-CHANGELOG.md
-data
-docs
-.git
-.gitignore
-README.md
-requirements.txt
-tests
+--- 27. Obtener copia de trabajo por medio de clone ---
+Comando: git clone https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos.git
+Destino: ~/Documents/catalogo_recursos_colaborador (carpeta aparte del propietario)
 
-Existe .venv? -> NO (correcto: debe reconstruirse)
+--- 29. Verificacion de la configuracion de repositorios remotos ---
+Remoto en la copia del colaborador:
+origin	https://TOKEN@github.com/pelopapuoxacaneitor-maker/catalogo_recursos.git (fetch)
+origin	https://TOKEN@github.com/pelopapuoxacaneitor-maker/catalogo_recursos.git (push)
 
---- 3) Archivos principales presentes en la copia ---
-  OK  README.md
-  OK  requirements.txt
-  OK  .gitignore
-  OK  CHANGELOG.md
-  OK  app/
-  OK  data/
-  OK  docs/
-  OK  tests/
+Identidad git del colaborador en esa copia:
+  user.name  : Colaborador Pelopapuoxacaneitor
+  user.email : 327618818+pelopapuoxacaneitor-maker@users.noreply.github.com
 
---- 4) Ramas disponibles (paso 29: verificar repositorios remotos) ---
-* main
-  remotes/origin/HEAD -> origin/main
-  remotes/origin/actualiza-readme
-  remotes/origin/main
-  remotes/origin/mejora-catalogo
-
---- 5) Remoto configurado en la copia ---
-origin	https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git (fetch)
-origin	https://github.com/OrlandoVillalobos-AI/catalogo_recursos.git (push)
-
---- 6) Contenido completo que recibe la persona colaboradora ---
-.gitignore
-CHANGELOG.md
-README.md
-app/configuracion.py
-app/main.py
-data/recursos.json
-docs/alcance.md
-docs/criterios.md
-docs/fuentes_recomendadas.md
-docs/respuestas.md
-requirements.txt
-tests/test_basico.py
+--- 30-34. Reconstruir el entorno en la copia del colaborador ---
+  .venv NO existe en el clon -> se reconstruye:
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+  Verificacion de dependencias:
+    requests 2.34.2
+    rich     15.0.0
+  Pruebas del proyecto tras reconstruir:
+    Ran 5 tests in 0.002s
+    
+    OK

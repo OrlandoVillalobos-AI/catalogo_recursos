@@ -250,6 +250,13 @@ solo. El beneficio real es que **se conserva la trazabilidad**: queda registrado
 observación, cuál fue y con qué commit se resolvió, que es exactamente lo que demuestra el flujo de
 colaboración.
 
+En esta práctica se comprobó de forma directa. La persona propietaria emitió un veredicto
+`CHANGES_REQUESTED` sobre el PR #3 (que contenía un commit). La persona colaboradora hizo el commit
+`b4bf48d` sobre la misma rama `mejora-catalogo` y lo publicó en su fork. El PR #3 pasó de 1 a 2
+commits **sin que se creara una solicitud nueva**: el total de Pull Requests del repositorio siguió
+siendo el mismo, y el veredicto pasó después a `APPROVED` sobre ese mismo hilo, conservando la
+observación original y el commit que la atendió.
+
 ### 88. Después de realizar el merge en GitHub, ¿por qué todavía es necesario actualizar el repositorio local?
 
 Porque **el merge ocurre en el repositorio remoto de GitHub y el repositorio local no se enteró**.
@@ -279,8 +286,35 @@ aparece y `git status` para verificar que el árbol está limpio.
 
 ## Nota sobre la forma de trabajo
 
-La práctica indica trabajar en parejas con intercambio de roles. En este caso el flujo se ejecutó con
-el propietario como responsable de `main` y el colaborador representado mediante una rama de trabajo
-sobre el mismo repositorio (`mejora-catalogo`), documentando igualmente el ciclo completo de
-aportación, revisión, solicitud de cambios, atención, aprobación y merge. La evidencia del ciclo
-queda en los Pull Requests y en `docs/evidencias/`.
+La práctica indica trabajar en parejas con intercambio de roles. El flujo se ejecutó con **dos cuentas
+de GitHub reales y distintas**:
+
+| Rol | Cuenta | Repositorio de trabajo |
+|---|---|---|
+| Persona A (propietaria) | `OrlandoVillalobos-AI` | `OrlandoVillalobos-AI/catalogo_recursos` |
+| Persona B (colaboradora) | `pelopapuoxacaneitor-maker` | Fork: `pelopapuoxacaneitor-maker/catalogo_recursos` |
+
+Con dos cuentas, el ciclo de colaboración se completó sin simulaciones:
+
+1. La persona colaboradora creó un **fork** real del repositorio de la propietaria.
+2. Obtuvo una copia de trabajo por `clone` en un directorio aparte, reconstruyó el entorno virtual y
+   trabajó en la rama `mejora-catalogo`.
+3. Publicó la rama en su fork y abrió un **Pull Request** desde el fork hacia `main` del repositorio
+   original (PR #3), quedando registrado como autor `pelopapuoxacaneitor-maker`.
+4. La persona propietaria revisó y emitió un veredicto **CHANGES_REQUESTED** real, solicitando un
+   cambio antes de aprobar, sin realizar el merge.
+5. La persona colaboradora atendió la observación con un commit nuevo sobre la **misma rama**. El
+   Pull Request se actualizó solo: no se creó una solicitud nueva.
+6. La persona propietaria emitió **APPROVED** y realizó el merge a `main`.
+7. El repositorio local de la propietaria se sincronizó con `git pull`.
+
+Los veredictos `CHANGES_REQUESTED` y `APPROVED` son revisiones reales de GitHub, no comentarios
+sustitutos: son posibles precisamente porque quien revisa y quien propone son **dos cuentas distintas**,
+lo que es justamente el punto de trabajar con fork.
+
+### Intercambio de roles
+
+El **reto final** (sección 23) se ejecutó con la persona colaboradora creando la rama
+`actualiza-readme` desde el fork, agregando la sección *Tipos de recursos* al `README.md` y solicitando
+su integración mediante un nuevo Pull Request. La persona propietaria revisó, aprobó, integró y
+actualizó su repositorio local, completando así el intercambio de responsabilidades del flujo.

@@ -1,54 +1,31 @@
-=== EVIDENCIA 08: Pull Request ===
+=== EVIDENCIA 08: Pull Request desde el fork ===
 
---- PR #1: aportacion de la rama de colaboracion ---
-  Numero      : #1
-  Titulo      : Incorporar documentación de fuentes recomendadas y nuevos criterios de clasificación
-  URL         : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/1
-  Origen      : mejora-catalogo
-  Destino     : main
-  Estado      : closed
-  Fusionado   : True
-  Creado      : 2026-09-10T17:28:13Z
-  Fusionado el: 2026-09-10T17:29:03Z
+--- 18. Solicitud para integrar la rama del fork hacia main del repositorio original ---
+  Numero    : #3
+  Titulo    : Incorporar fuentes recomendadas y nuevos criterios de clasificacion
+  URL       : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/3
+  Origen    : pelopapuoxacaneitor-maker:mejora-catalogo
+  Destino   : OrlandoVillalobos-AI:main
+  Autor     : pelopapuoxacaneitor-maker  <-- cuenta COLABORADORA (no la propietaria)
+  Estado    : closed
+  Fusionado : True
+  Creado    : 2026-09-10T17:51:19Z
+  Fusionado el: 2026-09-10T17:53:58Z
+  Commits   : 2 | Archivos: 3
 
   Descripcion enviada con la solicitud:
-    ## Aportación
-    
-    Se incorpora documentación adicional al catálogo de recursos académicos.
-    
-    ### Archivo creado
-    
-    - `docs/fuentes_recomendadas.md` — incluye **ocho fuentes o plataformas** que pueden proporcionar recursos académicos (Google Scholar, arXiv, MIT OpenCourseWare, Coursera, documentación oficial de Python, repositorio institucional de la Ibero León, Khan Academy y GitHub), con su URL y el criterio de uso de cada una.
-    
-    ### Archivos modificados
-    
-    - `docs/criterios.md` — se agregan **dos criterios nuevos** de clasificación:
-      - Criterio 7: *Formato del archivo* (`texto`, `multimedia`, `interactivo`, `codigo`).
-      - Criterio 8: *Vigencia del recurso* (`vigente`, `clasico`, `obsoleto`).
-    - `CHANGELOG.md` — se registra la entrada `0.1.1` con la documentación incorporada.
-    
-    ### Qué aporta el cambio
-    
-    Amplía la base documental del proyecto sin tocar el código de la aplicación: define de dónde se
-    obtendrán los recursos y con qué criterios adicionales se clasificarán, lo que prepara el terreno
-    para las funcionalidades de importación y clasificación descritas en `docs/alcance.md`.
-    
-    ### Qué debe revisar la persona propietaria
-    
-    1. Que `docs/fuentes_recomendadas.md` contenga las cinco fuentes mínimas solicitadas y que sus URLs
-       sean correctas.
-    2. Que los criterios 7 y 8 sean coherentes con los cuatro criterios ya existentes.
-    3. Que la entrada del CHANGELOG corresponda a los archivos realmente modificados.
-    4. Que ningún archivo ajeno a esta aportación se haya incluido en el commit.
+    Aportacion de la persona colaboradora:
+    - Nuevo archivo docs/fuentes_recomendadas.md con ocho plataformas de recursos academicos, cada una con su URL, que aporta y para que sirve.
+    - Criterios 9 (costo de acceso) y 10 (subtitulos o traduccion) agregados en docs/criterios.md.
+    - Entrada 0.2.0 registrada en CHANGELOG.md.
 
---- Archivos incluidos en el PR #1 (pestana Files changed) ---
-  modified  CHANGELOG.md                     +13 -0
-  modified  docs/criterios.md                +25 -0
-  added     docs/fuentes_recomendadas.md     +74 -0
+--- Archivos incluidos (pestana Files changed) ---
+  modified  CHANGELOG.md                     +15 -0
+  modified  docs/criterios.md                +31 -0
+  modified  docs/fuentes_recomendadas.md     +47 -54
 
---- Commits contenidos en el PR #1 ---
-  f7a95d3  Incorporar documentación de fuentes recomendadas y nuevos criterios
-  93b291a  Atender solicitud de cambios: agregar descripción a cada fuente recomendada
-
-Nota: el PR #1 fue creado desde la rama mejora-catalogo como origen y main como destino,
-que es el mismo flujo que se seguiria desde un fork: rama del colaborador -> main del original.
+--- Commits contenidos en el PR (con autor real de cada uno) ---
+  234129f | Incorporar fuentes recomendadas y nuevos criterios de clasificacion
+           autor: Colaborador Pelopapuoxacaneitor <327618818+pelopapuoxacaneitor-maker@users.noreply.github.com>
+  b4bf48d | Atender solicitud de cambios: renombrar valor institucional del criterio 9
+           autor: Colaborador Pelopapuoxacaneitor <327618818+pelopapuoxacaneitor-maker@users.noreply.github.com>

@@ -23,11 +23,11 @@ por lo que reflejan el estado real del repositorio remoto.
 | 03 | `evidencia_03_requirements.txt` | Dependencias instaladas y `requirements.txt` generado | 10-13 (sección 6) |
 | 04 | `evidencia_04_historial_commits.txt` | Historial de commits del repositorio | 14-18 (sección 9) y sección 10 |
 | 05 | `evidencia_05_repositorio_github.txt` | Repositorio publicado en GitHub; `.venv` ausente | 19-24 (sección 11) |
-| 06 | `evidencia_06_fork.txt` | Copia de trabajo obtenida por `clone`; `.venv` debe reconstruirse | 25-34 (secciones 12-13) |
+| 06 | `evidencia_06_fork.txt` | Fork real en la cuenta colaboradora y copia de trabajo por `clone`; `.venv` debe reconstruirse | 25-34 (secciones 12-13) |
 | 07 | `evidencia_07_rama_colaboracion.txt` | Rama `mejora-catalogo` y trabajo fuera de `main` | 35-46 (secciones 14-17) |
-| 08 | `evidencia_08_pull_request.txt` | Pull Request #1: título, descripción, archivos y commits | sección 18 |
-| 09 | `evidencia_09_request_changes.txt` | Solicitud de cambios y su atención sin crear otro PR | 47-53 (secciones 19-20) |
-| 10 | `evidencia_10_merge.txt` | Aprobación, merge, sincronización local y reto final | 54-63 (secciones 21-23) |
+| 08 | `evidencia_08_pull_request.txt` | Pull Request #3 desde el fork: título, descripción, archivos y commits | sección 18 |
+| 09 | `evidencia_09_request_changes.txt` | `CHANGES_REQUESTED` real y su atención sin crear otro PR | 47-53 (secciones 19-20) |
+| 10 | `evidencia_10_merge.txt` | `APPROVED` real, merge, sincronización local y reto final | 54-63 (secciones 21-23) |
 
 ## Correspondencia con los nombres sugeridos por la práctica
 
@@ -57,9 +57,18 @@ source .venv/bin/activate
 
 ## Enlaces verificables en GitHub
 
-- Repositorio: https://github.com/OrlandoVillalobos-AI/catalogo_recursos
-- Pull Request #1 (colaboración): https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/1
-- Pull Request #2 (reto final): https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/2
-- Rama de colaboración: https://github.com/OrlandoVillalobos-AI/catalogo_recursos/tree/mejora-catalogo
-- Rama del reto final: https://github.com/OrlandoVillalobos-AI/catalogo_recursos/tree/actualiza-readme
+- Repositorio (propietaria): https://github.com/OrlandoVillalobos-AI/catalogo_recursos
+- Fork (colaboradora): https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos
+- **PR #3 — colaboración desde el fork** (con `CHANGES_REQUESTED` y `APPROVED` reales):
+  https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/3
+- PR #2 — reto final, sección *Tipos de recursos*:
+  https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/2
+- PR #1 — primera aportación de documentación:
+  https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/1
+- Rama de colaboración en el fork:
+  https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos/tree/mejora-catalogo
+- Rama del reto final en el fork:
+  https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos/tree/actualiza-readme
 - Historial de commits: https://github.com/OrlandoVillalobos-AI/catalogo_recursos/commits/main
+- Historial de revisiones del PR #3:
+  https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/3/reviews

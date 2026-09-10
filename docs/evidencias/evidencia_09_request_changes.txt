@@ -1,64 +1,79 @@
 === EVIDENCIA 09: Solicitud de cambios y su atención ===
 
---- 1) Revision del PR #1 solicitando un cambio (paso 19) ---
-  Fecha    : 2026-09-10T17:28:30Z
-  Revisor  : OrlandoVillalobos-AI
-  Estado   : COMMENTED
+--- 19. La persona propietaria revisa y SOLICITA UN CAMBIO (no hace merge inmediato) ---
+Veredicto registrado en GitHub:
+  Revisor : OrlandoVillalobos-AI  (cuenta PROPIETARIA)
+  Estado  : CHANGES_REQUESTED
+  Fecha   : 2026-09-10T17:53:25Z
   Contenido de la revision:
-    Revisión de la aportación (Persona propietaria).
+    ## Revisión de la persona propietaria
     
-    **Archivos revisados**
-    - `docs/fuentes_recomendadas.md` (nuevo): contiene ocho fuentes, cumple el mínimo de cinco solicitado. URLs verificadas.
-    - `docs/criterios.md` (modificado): los criterios 7 (formato del archivo) y 8 (vigencia) son coherentes con los cuatro criterios anteriores.
-    - `CHANGELOG.md` (modificado): la entrada 0.1.1 corresponde exactamente a los archivos modificados en este commit.
+    Reviso la aportación de la rama `mejora-catalogo` del fork.
     
-    **Observación — se solicita un cambio antes de aprobar**
+    ### Archivos revisados
     
-    En `docs/fuentes_recomendadas.md` las fuentes aparecen únicamente con su nombre y su URL. Falta una breve descripción de cada una que explique qué tipo de recursos ofrece y para qué nivel académico resulta útil.
+    - **`docs/fuentes_recomendadas.md`** (modificado): contiene ocho fuentes, cumple el mínimo de cinco solicitado. Las URLs están verificadas y cada fuente incluye qué aporta y para qué sirve.
+    - **`docs/criterios.md`** (modificado): los criterios 9 (costo de acceso) y 10 (subtítulos o traducción) son coherentes con los criterios 1 a 8 ya existentes.
+    - **`CHANGELOG.md`** (modificado): la entrada 0.2.0 corresponde exactamente a los archivos modificados.
     
-    Acción solicitada: agregar una breve descripción a cada fuente incluida en `docs/fuentes_recomendadas.md`.
+    ### Observación — se solicita un cambio antes de aprobar
     
-    No se realiza el merge hasta que la observación sea atendida.
+    En `docs/criterios.md`, el criterio 9 define el valor `institucional` para el costo de acceso, pero ese valor **ya existe** en el criterio 6 (licencia de uso) con un significado distinto: ahí se refiere al tipo de licencia, no a quién paga. Mantener el mismo término con dos significados en el mismo documento va a generar confusión al implementar los filtros del catálogo.
     
+    **Acción solicitada:** renombrar el valor `institucional` del criterio 9 a `cubierto_por_institucion` y aclarar en una nota que es un criterio de costo, no de licencia.
+    
+    No realizo el merge hasta que esta observación sea atendida. El Pull Request permanece abierto y la corrección debe hacerse sobre la misma rama `mejora-catalogo`, sin abrir una solicitud nueva.
 
---- 2) Comentario con la solicitud de cambios explicita ---
-  Fecha : 2026-09-10T17:28:31Z
-  Autor : OrlandoVillalobos-AI
-  URL   : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/1#issuecomment-5622759636
-  Contenido:
-    **Solicitud de cambios (Request changes)**
+  Revisor : OrlandoVillalobos-AI  (cuenta PROPIETARIA)
+  Estado  : APPROVED
+  Fecha   : 2026-09-10T17:53:55Z
+  Contenido de la revision:
+    ## Revisión final de la persona propietaria
     
-    Se solicita **al menos un cambio antes de aprobar**, conforme al paso 19 de la práctica:
+    ### Verificación de la observación atendida
     
-    > Agregar una breve descripción a cada fuente incluida en `docs/fuentes_recomendadas.md`.
+    La observación solicitada consistía en que el valor `institucional` del criterio 9 (costo de acceso) se confundía con el valor `institucional` del criterio 6 (licencia de uso).
     
-    El Pull Request permanece abierto sin merge hasta que la observación sea atendida en la misma rama `mejora-catalogo`.
+    El commit `b4bf48d` (*Atender solicitud de cambios: renombrar valor institucional del criterio 9*) resuelve la observación:
+    
+    - El valor se renombra a `cubierto_por_institucion`.
+    - Se agrega una nota aclaratoria que distingue explícitamente costo de acceso de condiciones legales de uso.
+    - El CHANGELOG registra el cambio.
+    
+    El Pull Request se actualizó automáticamente con este segundo commit, **sin que se haya creado una solicitud nueva**: sigue siendo el PR #3.
+    
+    ### Revisión de coherencia final
+    
+    - `docs/fuentes_recomendadas.md`: ocho fuentes con URL, qué aporta y para qué sirve. Cumple el mínimo de cinco.
+    - `docs/criterios.md`: criterios 9 y 10 sin ambigüedad de términos respecto a los criterios 1 a 8.
+    - `CHANGELOG.md`: entrada 0.2.0 correspondiente a los archivos modificados.
+    - Sin archivos ajenos a la aportación.
+    - El PR toca 3 archivos con 2 commits y no presenta conflictos con `main`.
+    
+    **Aprobado.** Se procede a integrar a `main`.
 
---- 3) Atencion de la solicitud en la MISMA rama, SIN crear otro PR (paso 20) ---
+  NOTA: a diferencia de la primera ejecucion de la practica, este veredicto
+  CHANGES_REQUESTED es una revision REAL de GitHub, posible porque quien revisa
+  (cuenta propietaria) es distinto de quien abrio el PR (cuenta colaboradora).
+
+--- 47-53. El colaborador atiende la observacion en la MISMA rama ---
   Comando ejecutado: git push origin mejora-catalogo
   Commit que atiende la observacion:
-    93b291a - Atender solicitud de cambios: agregar descripción a cada fuente recomendada
-    Archivos tocados:
-      modified  docs/fuentes_recomendadas.md (+24)
+    b4bf48d - Atender solicitud de cambios: renombrar valor institucional del criterio 9
+    autor: Colaborador Pelopapuoxacaneitor
+    archivos tocados:
+      modified  CHANGELOG.md (+3)
+      modified  docs/criterios.md (+5)
 
---- 4) Comprobacion: la observacion se atendio en la MISMA solicitud (paso 20) ---
-  Antes de atender la observacion, el PR #1 contenia 1 commit (f7a95d3).
-  Tras el push a la misma rama, el PR #1 contiene 2 commits: f7a95d3 + 93b291a.
-  El PR #1 nunca se cerro ni se volvio a abrir: siguio siendo la misma solicitud (number=1).
+--- Comprobacion: NO se creo otro Pull Request ---
+  Total de Pull Requests en el repositorio: 3
+   PR #3 | autor: pelopapuoxacaneitor-maker    | Incorporar fuentes recomendadas y nuevos c
+   PR #2 | autor: OrlandoVillalobos-AI         | Agregar sección Tipos de recursos al READM
+   PR #1 | autor: OrlandoVillalobos-AI         | Incorporar documentación de fuentes recome
 
-  Comprobacion por API: Pull Requests existentes en el repositorio
-   PR #1 | closed | fusionado=True | Incorporar documentacion de fuentes recomendadas y nuevos criterios -> ESTA es la unica solicitud de la colaboracion; el commit de atencion entro en ella.
-   PR #2 | closed | fusionado=True | Agregar seccion Tipos de recursos al README -> corresponde al RETO FINAL (seccion 23), es una aportacion distinta y posterior, no una segunda solicitud del mismo cambio.
+  El PR #3 sigue siendo el MISMO y ahora contiene 2 commits (antes 1).
+  Estado: closed | Archivos: 3
 
-  Conclusion: el PR #1 paso de 1 commit (f7a95d3) a 2 commits (f7a95d3 + 93b291a)
-  al actualizar la misma rama remota. NO se creo un Pull Request nuevo: GitHub
-  incorporo automaticamente el commit nuevo a la solicitud existente.
-
---- 5) Nota tecnica sobre la interfaz de GitHub ---
-  La API de GitHub rechaza las revisiones con veredicto REQUEST_CHANGES o APPROVE
-  cuando el autor del Pull Request es el mismo usuario autenticado (error 422:
-  'Review Can not request changes on your own pull request'). Como en esta ejecucion
-  el propietario y el colaborador son el mismo usuario, la revision con veredicto y el
-  comentario posterior se registran como comentarios de revision (event=COMMENT), que
-  quedan igualmente versionados en el hilo del Pull Request y cumplen la funcion de
-  solicitar el cambio antes de aprobar, tal como exige el paso 19 de la practica.
+  Conclusion: al actualizar la misma rama, GitHub incorporo el commit nuevo a la
+  solicitud existente. No se abrio un Pull Request adicional: la conversacion,
+  la revision y el commit de atencion quedan en el mismo hilo (PR #3).

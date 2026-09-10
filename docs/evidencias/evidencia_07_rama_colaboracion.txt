@@ -1,52 +1,32 @@
-=== EVIDENCIA 07: Rama de colaboración ===
+=== EVIDENCIA 07: Rama de colaboración en el fork ===
 
---- 1) Creacion de la rama (paso 35) ---
+--- 35-37. Creacion de la rama en la copia del colaborador ---
 Comando: git checkout -b mejora-catalogo
-Comprobacion de la rama activa (paso 36):
-  git branch --show-current  ->  mejora-catalogo
-  git branch                 ->  * mejora-catalogo  /  main
+Rama activa (git branch --show-current): mejora-catalogo
+Verificacion de que NO se trabaja sobre main:
+  git branch ->   main  /  * mejora-catalogo
 
---- 2) Verificacion de que NO se trabajo sobre main (pasos 37 y 43) ---
-Commit de la aportacion: f7a95d3
-Ramas que contenian ese commit en el momento del push:
-  git branch --contains f7a95d3   ->   mejora-catalogo   (NO main)
+--- 43. El commit esta en mejora-catalogo y NO en main ---
+Commit de la aportacion del colaborador:
+234129f Incorporar fuentes recomendadas y nuevos criterios de clasificacion
+Ramas del fork que lo contienen:
+  mejora-catalogo   (main NO lo contiene)
 
-Estado de main antes del merge (faf20ed) — sin la aportacion:
-faf20ed Agregar sección Próximas mejoras en el README
+--- 44-46. La rama se publico en el FORK del colaborador ---
+Comando: git push -u origin mejora-catalogo
 
---- 3) Los cambios SI quedaron contenidos en la rama (pasos 44-46) ---
-Contenido de docs/ en la rama remota origin/mejora-catalogo:
-docs/alcance.md
-docs/criterios.md
-docs/fuentes_recomendadas.md
-docs/respuestas.md
+Ramas existentes en el fork del colaborador:
+  - actualiza-readme
+  - main
+  - mejora-catalogo
 
-Comparacion del arbol de la rama contra el estado base faf20ed (paso 40):
- CHANGELOG.md                 | 13 ++++++++
- docs/criterios.md            | 25 +++++++++++++++
- docs/fuentes_recomendadas.md | 74 ++++++++++++++++++++++++++++++++++++++++++++
- 3 files changed, 112 insertions(+)
+--- Contenido de docs/ en la rama del fork ---
+  - alcance.md
+  - criterios.md
+  - evidencias
+  - fuentes_recomendadas.md
+  - respuestas.md
 
---- 4) Ramas remotas existentes en GitHub (paso 45) ---
-  origin/HEAD -> origin/main
-  origin/actualiza-readme
-  origin/main
-  origin/mejora-catalogo
-
---- 5) Revision previa de los cambios sin registrarlos (pasos 38-41) ---
-git status --short  ->
-  M  CHANGELOG.md                  (modificado)
-  M  docs/criterios.md             (modificado)
-  ?? docs/fuentes_recomendadas.md  (NUEVO, sin seguimiento)
-
-git diff --stat (solo archivos ya rastreados) ->
-  CHANGELOG.md      | 13 +++++++++++++
-  docs/criterios.md | 25 +++++++++++++++++
-
-Preparacion selectiva unicamente de los archivos de la colaboracion (paso 41):
-  git add docs/fuentes_recomendadas.md docs/criterios.md CHANGELOG.md
-
---- 6) Verificacion de la rama de colaboracion en la API de GitHub ---
-URL: https://github.com/OrlandoVillalobos-AI/catalogo_recursos/tree/mejora-catalogo
-  Rama: mejora-catalogo
-  Ultimo commit: 93b291a - Atender solicitud de cambios: agregar descripción a cada fuente recomendada
+--- Verificacion en la interfaz de GitHub ---
+  Rama    : https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos/tree/mejora-catalogo
+  Fork    : https://github.com/pelopapuoxacaneitor-maker/catalogo_recursos
