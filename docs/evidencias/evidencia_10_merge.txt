@@ -1,51 +1,78 @@
 === EVIDENCIA 10: Aprobación, merge y sincronización del repositorio local ===
 
---- 54-56. Revision final y APROBACION real ---
+--- 54-56. Revision final y APROBACION real (PR #3) ---
   CHANGES_REQUESTED | revisor: OrlandoVillalobos-AI   | 2026-09-10T17:53:25Z
   APPROVED          | revisor: OrlandoVillalobos-AI   | 2026-09-10T17:53:55Z
 
-  Secuencia completa de la revision:
+  Secuencia de la revision del PR #3:
     1. CHANGES_REQUESTED  -> observacion registrada, sin merge
-    2. (colaborador hace commit b4bf48d y lo publica en la misma rama)
+    2. (el colaborador hace el commit b4bf48d y lo publica en la misma rama)
     3. APPROVED           -> observacion verificada como atendida
+    4. merge              -> integrado a main
 
 --- 57. Integracion de los cambios a main ---
-  PR #3  : Incorporar fuentes recomendadas y nuevos criterios de c
+  PR #3 : Incorporar fuentes recomendadas y nuevos criterios de c
+  Estado: closed | Fusionado: True
+  Fusionado el : 2026-09-10T17:53:58Z
+  Commit merge : cb0e61c
+  Merge desde  : pelopapuoxacaneitor-maker:mejora-catalogo
+
+--- 58. Verificacion de que los archivos forman parte de main ---
+  docs/fuentes_recomendadas.md | tamano: 2885 bytes
+  URL: https://github.com/OrlandoVillalobos-AI/catalogo_recursos/blob/main/docs/fuentes_recomendadas.md
+
+==================== RETO FINAL (seccion 23) ====================
+
+  Rama creada por la persona colaboradora: actualiza-readme
+  Commit: 742fa58 (autor: Colaborador Pelopapuoxacaneitor)
+
+  PR #4 : Agregar seccion Tipos de recursos al README (reto final)
+  Origen : pelopapuoxacaneitor-maker:actualiza-readme
+  Destino: OrlandoVillalobos-AI:main
+  Autor  : pelopapuoxacaneitor-maker
   Estado : closed | Fusionado: True
-  Fusionado el  : 2026-09-10T17:53:58Z
-  Commit merge  : cb0e61c
-  Merge desde   : pelopapuoxacaneitor-maker:mejora-catalogo
+  Fusionado el : 2026-09-10T17:58:36Z
+  Commit merge : 4b3318c
+  URL    : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/pull/4
 
---- 58. Verificacion en GitHub de que los archivos forman parte de main ---
-  Archivo: docs/fuentes_recomendadas.md | tamano: 2885 bytes
-  URL    : https://github.com/OrlandoVillalobos-AI/catalogo_recursos/blob/main/docs/fuentes_recomendadas.md
-  Archivo: docs/criterios.md | tamano: 4490 bytes
+  Revisiones registradas en el PR #4:
+    APPROVED   | revisor: OrlandoVillalobos-AI   | 2026-09-10T17:58:34Z
 
---- 56-57 (reto final). Aprobacion e integracion de la rama actualiza-readme ---
-  PR #3  | closed    | autor: pelopapuoxacaneitor-maker    | origen: pelopapuoxacaneitor-maker:mejora-catalogo
-  PR #2  | closed    | autor: OrlandoVillalobos-AI         | origen: OrlandoVillalobos-AI:actualiza-readme
-  PR #1  | closed    | autor: OrlandoVillalobos-AI         | origen: OrlandoVillalobos-AI:mejora-catalogo
+  Seccion agregada al README (verificada en el repositorio local):
+    linea 102:## Tipos de recursos
+
+  Verificacion de que no quedo duplicada:
+    ocurrencias: 1
 
 --- 59-63. Sincronizacion del repositorio LOCAL de la persona propietaria ---
   Comandos: git checkout main  &&  git pull
 
   Historial del repositorio LOCAL:
+    47d4904 Eliminar seccion Tipos de recursos duplicada en el README
+    4b3318c Merge PR #4: seccion Tipos de recursos en el README (reto final)
+    a8b5990 Actualizar respuestas y evidencias con el flujo de colaboracion entre dos cuentas
+    742fa58 Agregar seccion Tipos de recursos al README (reto final)
     cb0e61c Merge PR #3: fuentes recomendadas y criterios 9 y 10 (desde fork)
     b4bf48d Atender solicitud de cambios: renombrar valor institucional del criterio 9
     234129f Incorporar fuentes recomendadas y nuevos criterios de clasificacion
     f49d6b7 Agregar evidencias del desarrollo del flujo de trabajo
-    79a2630 Merge PR #2: sección Tipos de recursos en el README
-    1c14f2d Agregar sección Tipos de recursos al README
 
   El archivo de la persona colaboradora existe localmente:
-    -rw-rw-r-- 1 orlax1s orlax1s 2885 Sep 10 11:54 docs/fuentes_recomendadas.md
+    2885 bytes  docs/fuentes_recomendadas.md
     # Fuentes recomendadas de recursos académicos
 
-  Observacion atendida visible en el archivo local:
-    coincidencias de cubierto_por_institucion: 2
+  Observacion del PR #3 atendida y visible en el archivo local:
+    coincidencias: 2
 
   Estado del repositorio local:
+     M docs/evidencias/evidencia_10_merge.txt
     On branch main
-    Your branch is up to date with 'origin/main'.
-    
-    Changes not staged for commit:
+    Your branch is ahead of 'origin/main' by 4 commits.
+      (use "git push" to publish your local commits)
+
+==================== RESUMEN DE PULL REQUESTS ====================
+  PR    ESTADO   AUTOR                          ORIGEN                                     FUSIONADO
+  #4    closed   pelopapuoxacaneitor-maker      pelopapuoxacaneitor-maker:actualiza-readme 2026-09-10T17:58:36Z
+  #3    closed   pelopapuoxacaneitor-maker      pelopapuoxacaneitor-maker:mejora-catalogo  2026-09-10T17:53:58Z
+  #2    closed   OrlandoVillalobos-AI           OrlandoVillalobos-AI:actualiza-readme      2026-09-10T17:29:53Z
+  #1    closed   OrlandoVillalobos-AI           OrlandoVillalobos-AI:mejora-catalogo       2026-09-10T17:29:03Z
