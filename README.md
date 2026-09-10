@@ -114,6 +114,46 @@ El catálogo contempla cinco tipos de recurso académico, definidos en `docs/cri
 Cada recurso se clasifica además por tema, nivel académico, autor o fuente, idioma, licencia de uso,
 formato del archivo y vigencia.
 
+## Tipos de recursos
+
+El catálogo contempla cinco tipos de recurso académico. Esta sección describe qué se registra en cada
+uno, para qué sirve y de qué fuente suele provenir:
+
+### 1. `libro`
+
+Obra monográfica completa, impresa o digital. Es el tipo adecuado para estudio estructurado y
+consulta de referencia: se registra con autor, editorial, año y edición.
+
+### 2. `sitio_web`
+
+Portal, blog o documentación en línea. Incluye documentación oficial de lenguajes y herramientas. Su
+valor está en la actualización constante, por lo que conviene registrar la fecha de consulta.
+
+### 3. `video`
+
+Clase, conferencia o tutorial audiovisual. Útil para explicaciones paso a paso y demostraciones
+prácticas. Se registra la duración y el idioma para saber si requiere subtítulos.
+
+### 4. `articulo`
+
+Artículo académico, de divulgación o técnico. Es el tipo habitual de la literatura científica y se
+registra con DOI o URL permanente cuando existe.
+
+### 5. `software`
+
+Herramienta, biblioteca o plataforma. Incluye repositorios de código y entornos de trabajo. Se
+registra la versión y la licencia para saber si puede usarse libremente.
+
+### Resumen
+
+| Tipo | Contenido | Nivel habitual | Fuentes típicas |
+|---|---|---|---|
+| `libro` | Obra monográfica | introductorio a avanzado | editoriales, bibliotecas |
+| `sitio_web` | Documentación en línea | intermedio | documentación oficial |
+| `video` | Clase o tutorial | introductorio | plataformas de cursos |
+| `articulo` | Texto académico | avanzado | arXiv, Google Scholar |
+| `software` | Código o herramienta | introductorio a avanzado | GitHub |
+
 ## Próximas mejoras
 
 Cambios previstos para las siguientes versiones del proyecto:

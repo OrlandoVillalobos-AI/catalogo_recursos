@@ -56,3 +56,10 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - **Atendida la observación de la revisión:** el valor `institucional` del criterio 9 se renombra a
   `cubierto_por_institucion` para no confundirse con el valor `institucional` del criterio 6
   (licencia de uso), que tiene un significado distinto.
+
+## [0.2.1] - 2026-09-10
+
+### Añadido
+
+- Sección *Tipos de recursos* en `README.md`, con la descripción de los cinco tipos de recurso del
+  catálogo, su nivel habitual y las fuentes típicas de cada uno. (Reto final de la práctica.)
