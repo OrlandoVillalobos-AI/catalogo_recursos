@@ -94,7 +94,11 @@ cubrir con presupuesto limitado:
 | `gratuito` | Acceso libre, sin registro ni pago. |
 | `registro` | Requiere crear una cuenta, sin costo. |
 | `pago` | Exige compra, suscripción o licencia. |
-| `institucional` | Cubierto por la suscripción de la universidad. |
+| `cubierto_por_institucion` | El pago lo cubre la suscripción de la universidad. |
+
+> **Nota:** este criterio describe **quién paga** por el acceso, no las condiciones legales de uso.
+> El valor `cubierto_por_institucion` no debe confundirse con el valor `institucional` del criterio 6
+> (licencia de uso), que indica el tipo de licencia bajo la que se distribuye el recurso.
 
 ## 10. Idioma de los subtítulos o traducción
 

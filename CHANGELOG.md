@@ -53,3 +53,6 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 ### Cambiado
 
 - Se amplía la documentación del proyecto. No se modifica el código de la aplicación.
+- **Atendida la observación de la revisión:** el valor `institucional` del criterio 9 se renombra a
+  `cubierto_por_institucion` para no confundirse con el valor `institucional` del criterio 6
+  (licencia de uso), que tiene un significado distinto.
