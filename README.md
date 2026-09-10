@@ -98,3 +98,14 @@ rich==14.2.0
 
 > La carpeta `.venv/` no se almacena en el repositorio: se reconstruye en cada equipo a partir de
 > `requirements.txt`.
+
+## Próximas mejoras
+
+Cambios previstos para las siguientes versiones del proyecto:
+
+- Implementar el alta de recursos con validación de los campos obligatorios.
+- Añadir búsqueda y filtrado del catálogo por tipo, tema y nivel.
+- Incorporar exportación del catálogo a formato CSV.
+- Enriquecer los registros consultando fuentes académicas externas.
+- Agregar pruebas automáticas para la lectura y escritura de `data/recursos.json`.
+- Sustituir el almacenamiento en JSON por una base de datos cuando el catálogo crezca.
