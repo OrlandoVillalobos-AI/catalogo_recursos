@@ -26,3 +26,10 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 ### Cambiado
 
 - Se amplía la documentación del proyecto sin modificar el código de la aplicación.
+
+## [0.1.2] - 2026-09-10
+
+### Añadido
+
+- Sección *Tipos de recursos* en `README.md`, con los cinco tipos de recurso del catálogo y su
+  correspondencia con los registros de ejemplo.
