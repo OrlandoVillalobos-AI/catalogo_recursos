@@ -83,3 +83,30 @@ Estado de actualización de la fuente, para descartar material obsoleto:
 
 Este criterio exige registrar el año de publicación del recurso y revisarlo periódicamente, ya que un
 recurso técnico puede quedar desactualizado sin dejar de estar disponible en línea.
+
+## 9. Costo de acceso
+
+Condición económica necesaria para consultar el recurso. Permite armar listas de estudio que se puedan
+cubrir con presupuesto limitado:
+
+| Valor | Descripción |
+|---|---|
+| `gratuito` | Acceso libre, sin registro ni pago. |
+| `registro` | Requiere crear una cuenta, sin costo. |
+| `pago` | Exige compra, suscripción o licencia. |
+| `institucional` | Cubierto por la suscripción de la universidad. |
+
+## 10. Idioma de los subtítulos o traducción
+
+Indica si el recurso, cuando es audiovisual, cuenta con subtítulos o traducción al español. Es
+independiente del criterio 5 (idioma original) y responde a una necesidad práctica del estudiante:
+
+| Valor | Descripción |
+|---|---|
+| `si` | Tiene subtítulos o traducción disponible en español. |
+| `no` | Solo está disponible en su idioma original. |
+| `parcial` | Cuenta con subtítulos automáticos o de calidad limitada. |
+| `no_aplica` | El recurso no es audiovisual. |
+
+Este criterio permite filtrar material en otro idioma que, aun así, sea aprovechable sin dominio
+completo de la lengua original.
