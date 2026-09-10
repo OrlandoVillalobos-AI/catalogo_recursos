@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "recursos": [
+    {
+      "id": 1,
+      "titulo": "Automate the Boring Stuff with Python",
+      "tipo": "libro",
+      "tema": "programacion",
+      "nivel": "introductorio",
+      "autor": "Al Sweigart",
+      "fuente": "https://automatetheboringstuff.com/",
+      "idioma": "en",
+      "licencia": "abierta"
+    },
+    {
+      "id": 2,
+      "titulo": "Documentación oficial de Python",
+      "tipo": "sitio_web",
+      "tema": "programacion",
+      "nivel": "intermedio",
+      "autor": "Python Software Foundation",
+      "fuente": "https://docs.python.org/3/",
+      "idioma": "en",
+      "licencia": "abierta"
+    }
+  ]
+}
