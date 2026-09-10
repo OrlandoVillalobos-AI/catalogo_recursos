@@ -58,3 +58,28 @@ Condiciones bajo las cuales puede utilizarse el recurso:
 
 Este criterio es indispensable para saber si un recurso puede compartirse dentro del catálogo
 sin infringir derechos de autor.
+
+## 7. Formato del archivo
+
+Soporte o medio en que se presenta el recurso, útil para saber si requiere un lector, un reproductor
+o un programa específico:
+
+| Valor | Descripción |
+|---|---|
+| `texto` | Documento legible, impreso o digital (PDF, EPUB, HTML). |
+| `multimedia` | Audio o video que requiere reproducción. |
+| `interactivo` | Curso, notebook o entorno ejecutable. |
+| `codigo` | Repositorio, biblioteca o paquete de software. |
+
+## 8. Vigencia del recurso
+
+Estado de actualización de la fuente, para descartar material obsoleto:
+
+| Valor | Descripción |
+|---|---|
+| `vigente` | Actualizado o reeditado en los últimos tres años. |
+| `clasico` | Material antiguo pero vigente por su valor de referencia. |
+| `obsoleto` | Contenido superado por versiones o ediciones posteriores. |
+
+Este criterio exige registrar el año de publicación del recurso y revisarlo periódicamente, ya que un
+recurso técnico puede quedar desactualizado sin dejar de estar disponible en línea.
